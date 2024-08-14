@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <!-- Form for user login -->
+    <form method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+        <button type="submit">Login</button>
+    </form>
+    <!-- Link to the forgot password page -->
+    <a href="{{ url_for('forgot_password') }}">Forgot Password</a>
+    <br>
+    <!-- Link to the generate new password page -->
+    <a href="{{ url_for('generate_new_password') }}">Generate New Password</a>
+    <br>
+    <!-- Link to the homepage -->
+    <a href="{{ url_for('home') }}">Back to Homepage</a>
+</body>
+</html>

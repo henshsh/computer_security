@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Customer</title>
+</head>
+<body>
+    <h1>Add a New Customer</h1>
+    <!-- Form for adding a new customer -->
+    <form method="post">
+        <label for="customer_name">Customer Name:</label>
+        <input type="text" id="customer_name" name="customer_name" required>
+        <br><br>
+        <button type="submit">Add Customer</button>
+    </form>
+    <!-- Link to the homepage -->
+    <a href="{{ url_for('home') }}">Back to Homepage</a>
+</body>
+</html>
