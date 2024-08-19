@@ -1,0 +1,17 @@
+1. to alert the user that the username already exists. maybe using javascript to use its alert function
+2. at any step of registration, once we discovered a mistake, to alert the user!
+3. to uncomment the:
+#defining counter and getting the number of tries that we have
+global counterLoginTries
+counterLoginTries=login_tries
+# if the counter is 0, we return false
+    # we must here to refresh the page or something+alerting the user that he tried to sign up too many times
+    if (counterLoginTries == 0):
+        return False
+    #decrementing by one the counter
+    counterLoginTries-=1
+and establish a new function that knows how to take care of login numbers
+
+4. to insert to the data base not the hash format because it changes every time.
+5.#todo: to remove salt from the database 
+6. to remove the password from users table
